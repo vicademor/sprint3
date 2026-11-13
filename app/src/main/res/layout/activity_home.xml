@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,16 +30,16 @@
             android:layout_height="wrap_content"
             android:text="@string/titulo_velada"
             android:gravity="center"
-            android:textSize="50sp"
+            android:textSize="@dimen/text_size_title"
             android:textStyle="bold"
-            android:textColor="#0F172A"
+            android:textColor="@color/velada_dark_blue"
             android:fontFamily="@font/anton_regular"
-            android:layout_marginBottom="100dp"
+            app:fontFamily="@font/anton_regular"
+            android:layout_marginBottom="@dimen/title_margin_bottom"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.example.sprint3.OutlinedTextView
             android:id="@+id/subTitulo"
@@ -47,30 +47,48 @@
             android:layout_height="wrap_content"
             android:text="@string/subtitulo_velada"
             android:gravity="center"
-            android:textSize="30sp"
-            android:textColor="#0F172A"
+            android:textSize="@dimen/text_size_subtitle"
+            android:textColor="@color/velada_dark_blue"
             android:fontFamily="@font/anton_regular"
+            app:fontFamily="@font/anton_regular"
             app:layout_constraintTop_toBottomOf="@+id/titulo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="30dp"
-            />
+            android:layout_marginTop="@dimen/subtitle_margin_top" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCombates"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="@dimen/button_margin_horizontal"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:background="@drawable/button_velada"
-            android:paddingVertical="14dp"
+            android:paddingVertical="@dimen/button_padding_vertical"
             android:text="@string/ver_combates"
-            android:textColor="#D4AF37"
-            android:textSize="18sp"
+            android:textColor="@color/velada_gold"
+            android:textSize="@dimen/text_size_button"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/subTitulo" />
-        
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDetalles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/button_margin_horizontal"
+            android:layout_marginTop="@dimen/button_margin_secondary_top"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@drawable/button_velada"
+            android:paddingVertical="@dimen/button_padding_vertical"
+            android:text="@string/ver_detalles"
+            android:textColor="@color/velada_gold"
+            android:textSize="@dimen/text_size_button"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCombates"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -4,4 +4,6 @@
     <string name="titulo_velada">LA VELADA DE IBAI</string>
     <string name="subtitulo_velada">Proximamente en 2027</string>
     <string name="ver_combates">VER COMBATES</string>
+    <string name="ver_detalles">VER DETALLES</string>
+    <string name="toast_implementado">Todavía no está implementado</string>
 </resources>

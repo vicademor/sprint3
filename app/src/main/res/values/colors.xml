@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores usados en la app -->
+    <color name="velada_dark_blue">#0F172A</color>
+    <color name="velada_slate">#1E293B</color>
+    <color name="velada_gold">#D4AF37</color>
 </resources>
